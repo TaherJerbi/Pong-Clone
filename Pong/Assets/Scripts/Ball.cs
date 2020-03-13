@@ -73,11 +73,16 @@ public class Ball : MonoBehaviour
             scoreLeft++;
             //this line will convert the int score variable to a string variable
             scoreleftText.text = scoreLeft.ToString();
+            scoreleftText.fontSize += 30;
+            scoreleftText.color = Random.ColorHSV();
+
         }
         if (col.gameObject.name == "Wallleft")
         {
             scoreRight++;
             scorerightText.text = scoreRight.ToString();
+            scorerightText.fontSize += 30;
+            scorerightText.color = Random.ColorHSV();
         }
     }
 }
